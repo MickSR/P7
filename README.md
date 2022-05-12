@@ -1,9 +1,9 @@
-Technologies utilisées
+Technologies utilisées:
 Pour le frontend : React
 Pour le backend : Node.js,Express.js
 La base de données : MySQL
 
-Cahier des charges
+Cahier des charges:
 Le site doit comprendre un système d'authentification.
 La creation du compte doit être simple et rapide.
 Le réseau social doit être accessible sur mobile.
