@@ -1,7 +1,7 @@
 Technologies utilisées:
 
-Pour le frontend : React
-Pour le backend : Node.js,Express.js
+Pour le frontend : React/
+Pour le backend : Node.js,Express.js/
 La base de données : MySQL
 
 Cahier des charges:
