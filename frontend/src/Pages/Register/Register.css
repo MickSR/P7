@@ -1,0 +1,58 @@
+.Register {
+  width: auto;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Register h1 {
+  text-align: center;
+}
+.RegisterForm {
+  display: flex;
+  flex-direction: column;
+}
+.RegisterForm input {
+  width: 15em;
+  height: 3em;
+  border-radius: 10px;
+  margin: 0.5em;
+  padding-left: 0.5em;
+  font-size: 1.2rem;
+}
+.RegisterForm button {
+  height: 3em;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  margin: 0.5em;
+  background-color: #0a3d62;
+  color: #fff;
+}
+.RegisterForm button:hover {
+  cursor: pointer;
+  background-color: #82ccdd;
+}
+ 
+.card{
+  padding: 50px;
+  width:auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:600px;
+}
+
+.card1 {
+  display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 855px;
+}
+
+.form-group{
+  padding: 10px;
+  }

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Quicksand";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0x;
+  font-family: "Quicksand";
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+}
+
+h6 {
+  text-align: center;
+}

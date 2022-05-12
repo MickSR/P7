@@ -1,0 +1,73 @@
+
+.container {
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f0c1c3;
+  border-radius: 20px;
+  padding: 50px;
+  margin-bottom: 300px;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.delete{
+  display: flex;
+  flex-direction: column;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container{
+  background-color: #f0c1c3;
+}
+
+.profile-picture {
+  object-fit: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  margin: auto 10px auto auto;
+}
+
+.image-uploader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.divEditProfile form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.divEditProfile button{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top:10px;
+  border-radius: 15px 15px;
+  height: 35px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+
+.divEditProfile label{
+  margin-bottom: 15px;
+}
+.divEditProfile div{
+  margin-bottom: 15px;
+}

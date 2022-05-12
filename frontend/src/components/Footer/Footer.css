@@ -1,0 +1,46 @@
+footer {
+  background-color: white;
+  color: #000000;
+  width: 100%;
+  box-shadow: 5px 5px 30px grey;
+}
+
+
+.about p {
+  font-size: 1.6em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 600;
+
+}
+
+.about-list {  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+  font-size: 1.5em; 
+  
+}
+
+.about .about-list-font {
+  display: flex;
+  width: 40%;
+  margin-bottom: 3%;
+  font-weight: 500;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+.about .about-list-nofont {
+  color: black;
+  font-weight: 600;
+}
+
+.about .about-list-nofont a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+
+}

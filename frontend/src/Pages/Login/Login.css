@@ -1,0 +1,38 @@
+.Login {
+  width: auto;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Login h1 {
+  text-align: center;
+}
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+}
+.LoginForm input {
+  width: 15em;
+  height: 3em;
+  border-radius: 10px;
+  margin: 0.5em;
+  padding-left: 0.5em;
+  font-size: 1.2rem;
+}
+.LoginForm button {
+  height: 3em;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  margin: 0.5em;
+  background-color: #0a3d62;
+  color: #fff;
+}
+.LoginForm button:hover {
+  cursor: pointer;
+  background-color: #82ccdd;
+}
+.Error {
+  color: red;
+}

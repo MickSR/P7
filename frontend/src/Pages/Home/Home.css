@@ -1,0 +1,13 @@
+.Background {
+  background-image: url("../../assets/8f923c82ce8dc52daa488e5606c3879d.jpg");
+  height: 830px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: initial;
+  position: relative;
+}
+
+.Presentation {
+  margin-top: 20px;
+}
+
