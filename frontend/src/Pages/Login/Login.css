@@ -14,18 +14,18 @@
   flex-direction: column;
 }
 .LoginForm input {
-  width: 15em;
-  height: 3em;
+  width: 240px;
+  height: 48px;
   border-radius: 10px;
-  margin: 0.5em;
-  padding-left: 0.5em;
-  font-size: 1.2rem;
+  margin: 8px;
+  padding-left: 8px;
+  font-size: 19.2px;
 }
 .LoginForm button {
-  height: 3em;
-  font-size: 1.2rem;
+  height: 48px;
+  font-size: 19.2px;
   border-radius: 50px;
-  margin: 0.5em;
+  margin: 8px;
   background-color: #0a3d62;
   color: #fff;
 }
