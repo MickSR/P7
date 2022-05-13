@@ -6,7 +6,7 @@ function Home() {
     <main>
       <div className="Background">
         <div className="Presentation">
-          <h1>Welcome to Groupomania</h1>
+          <h1>Bienvenue chez Groupomania</h1>
         </div>
       </div>
     </main>
