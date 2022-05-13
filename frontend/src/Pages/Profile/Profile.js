@@ -6,6 +6,10 @@ import { Link } from "react-router-dom";
 import "./Profile.css";
 
 const Profile = () => {
+
+  const [file, setFile] = useState();
+  const image = document.getElementById("image-container");
+
   const handleDelete = () => {
     const id = JSON.parse(localStorage.getItem("User"))["userId"];
     if (window.confirm("Voulez vous vraiment supprimer votre compte ?")) {
@@ -21,16 +25,13 @@ const Profile = () => {
           window.location.href = "/login";
         })
         .catch((err) => {
-          console.log(err);
+          console.error(err);
           window.alert(
             "Une erreur est survenue, veuillez réessayer plus tard. Si le problème persiste, contactez l'administrateur du site"
           );
         });
     }
   };
-
-  const [file, setFile] = useState();
-  const shwImage = document.getElementById("image-container");
 
   const pictureLoad = (e) => {
     const efile = e.target.files[0];
@@ -40,19 +41,18 @@ const Profile = () => {
       const dataUrl = e.target.result;
       const img = document.createElement("img");
       if (document.getElementById("my-image")) {
-        shwImage.removeChild(document.getElementById("my-image"));
+        image.removeChild(document.getElementById("my-image"));
       }
       img.id = "my-image";
       img.src = dataUrl;
-      shwImage.appendChild(img);
+      image.appendChild(img);
     };
-    reader.readAsDataURL(efile);
   };
 
   //  save Post in database
   const handlePost = async (e) => {
     e.preventDefault();
-    if (file) console.log(file);
+    
     const data = new FormData();
     if (file) data.append("profil_image", file);
     const id = JSON.parse(localStorage.getItem("User"))["userId"];
@@ -72,12 +72,13 @@ const Profile = () => {
         window.location.href = "/login";
       })
       .catch((err) => {
-        console.log(err.response);
+        console.error(err.response);
       });
   };
 
   const currentUser = AuthService.getCurrentUser();
-  if (currentUser.role == false) {
+
+  if (!currentUser.role) {
     currentUser.role = "Utilisateur";
   } else {
     currentUser.role = "Administrateur";
@@ -89,7 +90,7 @@ const Profile = () => {
           <label htmlFor="file-input">
             <img
               src={currentUser.imageProfile}
-              alt=""
+              alt={currentUser.userName}
               className="profile-picture"
             />
           </label>
@@ -97,7 +98,7 @@ const Profile = () => {
             <h2>
               <strong>Modifier la photo de profil : </strong>
             </h2>
-            <form id="formFile" enctype="multipart/form-data">
+            <form id="formFile" encType="multipart/form-data">
               <label>Choisir un fichier : </label>
               <input
                 id="file"
