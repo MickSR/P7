@@ -12,7 +12,7 @@ const Publication = (infos) => {
   const navigate = useNavigate();
 
   // upload image and visuaize it
-  const shwImage = document.getElementById("image-container");
+  const image = document.getElementById("image-container");
 
   const pictureLoad = (e) => {
     const efile = e.target.files[0];
@@ -22,11 +22,11 @@ const Publication = (infos) => {
       const dataUrl = e.target.result;
       const img = document.createElement("img");
       if (document.getElementById("my-image")) {
-        shwImage.removeChild(document.getElementById("my-image"));
+        image.removeChild(document.getElementById("my-image"));
       }
       img.id = "my-image";
       img.src = dataUrl;
-      shwImage.appendChild(img);
+      image.appendChild(img);
     };
     reader.readAsDataURL(efile);
   };
@@ -34,9 +34,6 @@ const Publication = (infos) => {
   //  save Post in database
   const handlePost = async (e) => {
     e.preventDefault();
-    if (file) console.log(file);
-    console.log(publication);
-    console.log(UserId);
     const data = new FormData();
     if (file) data.append("publication", publication);
     data.append("UserId", UserId);
@@ -51,13 +48,12 @@ const Publication = (infos) => {
       },
       data,
     })
-      .then((res) => {
+      .then(() => {
         alert("publication réussie!");
         navigate("/articles");
-        console.log(res);
       })
       .catch((err) => {
-        console.log(err.response);
+        console.error(err.response);
       });
   };
 

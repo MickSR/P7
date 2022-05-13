@@ -29,7 +29,7 @@ const validEmail = (value) => {
   }
 };
 
-const vusername = (value) => {
+const validUsername = (value) => {
   if (value.length < 3 || value.length > 20) {
     return (
       <div className="alert alert-danger" role="alert">
@@ -39,7 +39,7 @@ const vusername = (value) => {
   }
 };
 
-const vpassword = (value) => {
+const validPassword = (value) => {
   if (value.length < 6 || value.length > 40) {
     return (
       <div className="alert alert-danger" role="alert">
@@ -121,7 +121,7 @@ const Register = (props) => {
                   name="username"
                   value={userName}
                   onChange={onChangeUsername}
-                  validations={[required, vusername]}
+                  validations={[required, validUsername]}
                 />
               </div>
 
@@ -145,7 +145,7 @@ const Register = (props) => {
                   name="password"
                   value={password}
                   onChange={onChangePassword}
-                  validations={[required, vpassword]}
+                  validations={[required, validPassword]}
                 />
               </div>
 

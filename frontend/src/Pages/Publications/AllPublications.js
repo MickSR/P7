@@ -145,8 +145,8 @@ function AllPublication() {
                   </p>
                 </div>
                 {(UserId === publication.UserId ||
-                  currentUser.role === true) && (
-                  <form className="delete-post" submit="">
+                  currentUser.role ) && (
+                  <form className="delete-post" >
                     <input
                       type="hidden"
                       name="publicationId"
@@ -175,7 +175,7 @@ function AllPublication() {
                   />
                 </div>
               </div>
-              <footer className="footer">
+              <footer >
                 <div className="commentslist">
                   <h3>Commentaires</h3>
                   <div className="comments">
@@ -205,7 +205,7 @@ function AllPublication() {
                               <p>{comment.comment}</p>
                             </div>
                             {(UserId === comment.UserId ||
-                              currentUser.role === true) && (
+                              currentUser.role) && (
                               <form
                                 className="comments--comment--delete"
                                 submit=""

@@ -11,7 +11,6 @@ const Navbar = () => {
 
   useEffect(() => {
     const user = AuthService.getCurrentUser();
-    console.log(user);
 
     if (user) {
       setCurrentUser(user);
@@ -30,7 +29,7 @@ const Navbar = () => {
     AuthService.logout();
     setCurrentUser(undefined);
   };
-  console.log(currentUser);
+
   return (
     <div>
       <nav className="Navbar">
