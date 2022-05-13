@@ -71,7 +71,7 @@ const Login = (props) => {
 
   return (
     <div className="card1">
-      <div className="card card-container">
+      <div className="card2 card-container">
         <img src={image} alt="Logo" width="150px" height="auto" />
         <Form onSubmit={handleLogin} ref={form}>
           <div className="form-group">

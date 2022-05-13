@@ -36,3 +36,14 @@
 .Error {
   color: red;
 }
+
+.card2 {
+  box-shadow: 5px 5px 30px grey;
+  padding: 50px;
+  width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
