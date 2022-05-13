@@ -1,7 +1,6 @@
-import React, { useEffect, useState, useRef, Component } from "react";
+import React, {  useState  } from "react";
 import axios from "axios";
 import AuthService from "../../services/auth.service";
-import { Link } from "react-router-dom";
 
 import "./Profile.css";
 

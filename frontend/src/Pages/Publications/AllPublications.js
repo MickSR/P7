@@ -1,7 +1,6 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 import AuthService from "../../services/auth.service";
 import { useNavigate } from "react-router-dom";
-import Anonymous from "../../assets/avatar.png";
 import axios from "axios";
 import "../Publications/main.css";
 import dayjs from "dayjs";
