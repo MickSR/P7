@@ -27,8 +27,6 @@ function AllPublication() {
 
   const UserId = JSON.parse(localStorage.getItem("User"))["userId"];
 
-  console.log(publications);
-
   //Routes GET publications
   const getAllPublications = async () => {
     await axios({
