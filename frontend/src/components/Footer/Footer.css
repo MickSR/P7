@@ -6,6 +6,10 @@ footer {
 }
 
 
+#about-title{
+  color: #0e1e45;
+}
+
 .about p {
   font-size: 1.6em;
   text-align: center;
@@ -19,7 +23,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; 
-  font-size: 1.5em; 
+  font-size: 1.5em;
   
 }
 
